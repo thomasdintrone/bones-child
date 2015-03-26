@@ -1,0 +1,25 @@
+/******************************************************************
+Theme Name: Bones Child Template (RENAME ME)
+Theme URI: 
+Description: This is child theme that uses the Bones theme as it's parent but strips out all the unnecessary gunk it comes with and also includes some extra goodies of my own. Website Designs and Developed by <a href="http://curran-connors.com">Curran & Connors</a>
+Author: Thomas Dintrone
+Author URI: http://www.curran-connors.com
+Version: 1.7
+Tags: fluid-layout, responsive-layout, accessibility-ready, translation-ready, microformats, rtl-language-support
+Template: bones
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+
+------------------------------------------------------------------ */
+
+
+
+/*********************************************
+SPECIALTY
+**********************************************/
+/* This will hide all share this stuff except for the "ShareThis" text */
+span.sharethis { background:none !important;}
+.stButton .chicklets { font-family:inherit !important; padding-left:0 !important; }
+.st_facebook, .st_twitter, .st_linkedin, .st_pinterest, .st_email { display:none; }

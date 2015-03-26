@@ -1,0 +1,108 @@
+/*
+	RESPONSIVE STYLESHEET
+	ready to go...
+*/
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+	section.lowerContent .lowerRight { padding-right: 75px; }
+	
+	section.mainContent .row { padding-left: 40px; padding-right:40px; }
+	
+	aside.sidebar { padding-left: 0; padding-right:0;}
+	
+	div.firstItem,
+	div.secondItem, 
+	div.thirdItem,
+	div.lastItem { padding-right: 15px; padding-left:15px; }
+	
+	label { width: 22%; }
+	div.inputWrap input { max-width: 77%; }
+
+	body { /*background:#f8f8f8 !important;*/ background-size: initial !important; }
+	
+	#lpr-search-address { width: 28.5em; }
+	
+	nav.mainNav ul li a { margin-left:4px;}
+	
+	ul.list li { margin: 25px 0; }
+
+}
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 767px) { 
+	
+	nav.mainNav ul li a { font-family:'Avenir LT W01_85 Heavy'; font-weight:normal;}
+	nav.mainNav ul.mobileSub li a { font-family:'Avenir LT W01_45 Book';}
+	
+	
+	/* HEADER */
+	div.logo { width: 39%; padding-left: 8px;top:6px; }
+	body.home div.logo { top:0; }
+	body.home div.logo a { display:block !important; }
+	body.home div.logo a.mobileLogo { display:none !important; }
+	
+	div.logo a { display:none; }
+	div.logo a.mobileLogo { display:block; }
+	
+	a#openMenu { display:inline-block;color: #96b1c3; font-size: 23px; margin-top:15px;}
+	.closeIcon { background:#fff; padding:15px 0 33px; display:block;}
+	a#closeMenu { color:#6f95ae; font-size:23px; position: relative; left: -50px;}
+	nav.mainNav { margin-top:0;width: 61%; padding-right: 20px; }
+	/*nav.mainNav { position: absolute; z-index: 9999; top: 0; left: 0; width: 100% !important; height: 100%; overflow: hidden; }*/
+	nav.mainNav div.mobileMenuWrap { display:none;position: fixed; top: 0; left: 0; width: 100%; height: 100%; background:url(../img/bg-mobile-menu.png); z-index: 9999; text-align: left; margin:0;}
+	nav.mainNav div.mobileWrap2 { overflow:auto; padding-bottom:50px; position: absolute; width: 100%; height: 100%; background: #f8f8f8; top: 0; left: 27px;}
+	nav.mainNav ul {margin-left: 0;}
+	nav.mainNav ul li { padding-bottom: 25px !important;display:block; padding:0; background:#fff; padding-left: 15px;}
+	nav.mainNav ul li a { color:#7e7e7e;font-size:13px; text-transform:uppercase; }
+	nav.mainNav ul li.current-menu-item a, nav.mainNav ul li a:hover { color:#003e7e; text-decoration:none;}
+	
+	.mobileSub { display:block; position:static; }
+	nav.mainNav ul.mobileSub li { background:#f8f8f8; padding: 25px 15px 0px !important;}
+	nav.mainNav ul.mobileSub li a { color:#aaa; text-transform:none; }
+	nav.mainNav ul.mobileSub li.current-menu-item a { color:#003e7e;  }
+	
+	/* MAIN CONTENT */
+	h1, h1 a { font-size: 30px; }
+	h3, h3 a { font-size: 20px; margin-top:15px;}
+	article.content h3 br { display:none; }
+	
+	p { font-size: 16px; line-height: 32px; }
+	
+	section.mainContent { border-top: 6px solid #003e7d; padding-top: 111px; }
+	section.mainContent .row { padding-left: 10px; padding-right: 10px; }
+	
+	article.content.withSidebar { padding-right: 15px; }
+	aside.sidebar { padding-left: 15px; padding-right: 15px; }
+	
+	/* FOOTER */
+	footer { padding: 54px 0 20px;}
+	nav.footerNav ul li { padding-left: 2px; padding-right: 2px; }
+  	
+	/* PAGE SPECIFIC */
+	/* Home */
+	body.home a#openMenu { color: #556163;}
+	section.homeContent { /*min-height:1px !important;*/ }
+	section.homeContent p { font-size: 12px;}
+	section.homeContent h1 { font-size: 67px; line-height: 43px; margin-top:2px; margin-bottom: 22px !important;}
+	section.homeContent h1 span { font-size: 43px; }
+	
+	section.lowerContent { padding-top: 38px; }
+	.lowerLeft { text-align:left !important; }
+	.lowerLeft h4 { font-size: 18px; }
+	section.lowerContent .lowerRight { padding-right: 15px; }
+	.lowerRight p { font-size: 15px; line-height: 27px; margin-top: 12px; margin-bottom: 14px;}
+
+	.brandLogos { display:none;}
+	
+	#lpr-search-address {width: 90%; }
+	ul.list-inline.list-margin-v.list-margin-h li { width: 100%; padding-right:0; padding-left:0;}
+	ul.list-inline.list-margin-v.list-margin-h { padding: 9px 9px 0; }
+	#lpr-search-button { background-position:122px center; padding: 10px 10px 10px 0; margin-top: 0; margin-left: 0; margin-bottom: 0; text-align: left; }
+	#lpr-locations { width: 100%; } 
+}
