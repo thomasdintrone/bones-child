@@ -665,9 +665,9 @@ function get_featured_image($size='full') {
 	$thumb_url_array = wp_get_attachment_image_src($thumb_id, $size);
 	$thumb_url = $thumb_url_array[0];
 	
-	if (strpos($thumb_url,'default.png') !== false) {
-    	//$thumb_url = return_option('_default_header');
-    	$thumb_url = '';
+	if (strpos($thumb_url,'default.png') !== false || $thumb_url == '') {
+		// If there is NO featured image set, use a custom one:
+    	//$thumb_url = {{ FEATUREDIMAGE PATH GOES HERE }}
 	} 
 	
 	return $thumb_url;
