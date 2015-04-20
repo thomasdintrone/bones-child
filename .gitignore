@@ -11,7 +11,7 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
-includes/core_paths.php
+#includes/core_paths.php
 export.php
 export1/
 export2/
