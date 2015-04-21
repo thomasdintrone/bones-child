@@ -673,6 +673,14 @@ function get_featured_image($size='full') {
 	return $thumb_url;
 }
 
+// GET PAGE/POST SLUG
+// reference: http://www.wprecipes.com/wordpress-function-to-get-postpage-slug
+function get_the_slug() {
+    $post_data = get_post($post->ID, ARRAY_A);
+    $slug = $post_data['post_name'];
+    return $slug; 
+}
+
 // FOR FILE ZIPPING VIA AJAX - BETA
 // havenb't figured this out yet.
 /*function zip_init() {
