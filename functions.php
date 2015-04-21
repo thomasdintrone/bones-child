@@ -680,6 +680,9 @@ function get_the_slug() {
     $slug = $post_data['post_name'];
     return $slug; 
 }
+function the_slug() {
+	echo get_the_slug();
+}
 
 // FOR FILE ZIPPING VIA AJAX - BETA
 // havenb't figured this out yet.
