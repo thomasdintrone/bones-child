@@ -684,6 +684,13 @@ function the_slug() {
 	echo get_the_slug();
 }
 
+// Implement Google Analytics click tracking
+function get_ga_click_tracking($type,$title,$action='Downloaded') {
+		
+	return ' onClick="ga(\'send\', \'event\', \''.$type.'\', \''.$action.'\', \''.$title.'\');" ';
+	
+}
+
 // FOR FILE ZIPPING VIA AJAX - BETA
 // havenb't figured this out yet.
 /*function zip_init() {
