@@ -198,6 +198,11 @@ function my_theme_register_required_plugins() {
             'slug'      => 'wordpress-importer',
             'required'  => true,
         ),
+		array(
+            'name'      => 'iThemes Security',
+            'slug'      => 'better-wp-security',
+            //'required'  => true,
+        ),
 
     );
 
