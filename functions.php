@@ -132,6 +132,9 @@ function custom_scripts_and_styles() {
 		// Google Maps API
 		//wp_register_script( 'google-js', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyARge1ZblVIGmpLPS5Ous6ym0aJwZl6MPI&sensor=true&libraries=places', array( 'jquery' ), '', true );
 		
+		// Youtube Google Analytics
+		//wp_register_script( 'youtube-js', get_stylesheet_directory_uri() . '/plugins/youtube-google-analytics/lunametrics-youtube-v7.gtm.js', array( 'jquery' ), '', true );
+		
 		
 		// Enqueue All the Styles and Scripts
 		wp_enqueue_script( 'modernizr-js' );
@@ -144,6 +147,7 @@ function custom_scripts_and_styles() {
 		//wp_enqueue_script( 'prettyphoto-js' );
 		//wp_enqueue_script( 'mason-js' );
 		//wp_enqueue_script( 'google-js' );
+		//wp_enqueue_script( 'youtube-js' );
 		
 		//wp_enqueue_style( 'fonts-dotcom-stylesheet' );
 		//wp_enqueue_style( 'fontawesome-stylesheet' );
