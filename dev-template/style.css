@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*
+Site Name: {{ SITE NAME GOES HERE }}
+Site URL: {{ SITE URL GOES HERE }}
+Description: {{ DESCRIPTION GOES HERE }}
+Author: Thomas Dintrone
+*/
+
+/*********************************************
+NOTES
+ 
+For PIE: behavior: url(css/pie/PIE.htc);
+
+IE8 Background Cover: 
+.selector { 
+    background-size: cover;
+    /* The url is relative to the document, not to the css file! */
+    /* Prefer absolute urls to avoid confusion. */
+   /* -ms-behavior: url(PATHTOFILE/backgroundsize.min.htc);
+}
+
+** I've included the depricated version of this plugin which is actually a 
+** jQuery plugin in the footer_assets.php file. "background-size-deprecated" folder.
+** For that, just include the file and then use this: $('.selector').css("background-size", "cover");
+
+Clearfix: <div class="clearfix visible-xs-block"></div>
+
+**********************************************/
+
+
+/*********************************************
+RESET
+**********************************************/
+blockquote,body,form,h1,h2,h3,h4,h5,img,li,ol,p,ul{margin:0;padding:0}h1,h2,h3,h4,h5{font-weight:400}ol,ul{list-style:none}code{background:#FFFFC1}a{text-decoration:none}a img,img{border:0}blockquote p{padding:5px 0}.aligncenter{margin:5px auto 20px;display:block}.alignleft{margin:5px 20px 8px 0;float:left}.alignright{margin:5px 0 8px 20px;float:right}.col-left{float:left}.col-right{float:right}.wrap:after{content:".";display:block;height:0;clear:both;visibility:hidden}.fix{clear:both;height:1px;margin:-1px 0 0;overflow:hidden}.fl{float:left}.fr{float:right}.ac{text-align:center}.ar{text-align:right}img.centered{display:block;margin-left:auto;margin-right:auto}.group:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.group{clear:both}* html .group{height:1%}.group{display:block}
+
+/*********************************************
+FONTS
+**********************************************/
+body { font-family:Helvetica, arial, sans-serif; }
+
+/*********************************************
+HTML5 
+**********************************************/
+article, aside, figure, footer, header, nav, section {display: block;}
+
+/*********************************************
+GENERAL
+**********************************************/
+html, body { height:100%; margin:0; padding:0; }
+body {  }
+
+a {  }
+a:hover { text-decoration:underline; }
+
+hr { margin:30px 0; clear:both; border-top:solid 1px #e6e0da; border-bottom:solid 1px #e6e0da; height:3px; border-left:0; border-right:0;}
+
+.content {  }
+
+h1 { }
+h2 {  }
+h3 {  }
+h4 {  }
+h5 {  }
+h6 {  }
+
+p {  }
+
+.noPadL { padding-left:0 !important; }
+.noPadR { padding-right:0 !important; }
+.noPad { padding-left:0 !important; padding-right:0 !important; }
+
+.text-uppercase { text-transform:uppercase; }
+
+a.preload { background-position:-99999px -99999px; background-repeat:no-repeat; }
+
+.margin-auto { margin:0 auto; }
+
+.noScroll { overflow:hidden; }
+
+.fixed { position:fixed; }
+.absolute { position:absolute; }
+.relative { position:relative; }
+.static { position:static; }
+
+.centered { position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+
+/*********************************************
+NAVIGATION
+**********************************************/
+
+
+/*********************************************
+PAGE STRUCTURE
+**********************************************/
+/* HEADER */
+
+
+/* SLIDER */
+
+
+/* MAIN CONTENT SECTIONS */
+
+
+/* FOOTER */
+
+
+/*********************************************
+PAGE SPECIFIC
+**********************************************/
+
+
+/*********************************************
+BLOCKS
+**********************************************/
+/* Contact Form */
+.contactFormWrap { position:relative; z-index:999;}
+.form { /*float:right;*/ width:100%; background:#191919; margin-bottom: 5px;}
+.form form { padding:0px 15px 20px; }
+.contactFormWrap h3 { margin:0; color:#C67914; padding:10px 15px 20px; font-size:19.06px; }
+.form textarea, .form label.full { display:block; width:100%; float:none;}
+.form label, .form input { display:inline-block; } 
+.form label { font-size:14px; color:#fff; width:80px; float:left;}
+.form input { background:#fff; margin-bottom:1em; border:0; padding:1px 0 2px; height:20px; width:65.7%; }
+input.submitButton { text-transform:uppercase;margin-left:0;display:block; margin-bottom:0; font-size:15px; height:auto;width:auto; background:#ccc; color:#fff; padding:5px 8px; }
+input.submitButton:hover { cursor:pointer; }
+.form textarea { background:#fff;border:0; height:60px;  width:98.5%;  margin-bottom:1em;}
+span.errorMessage, span.successMessage { font-size:12px; font-weight:bold; position:absolute; bottom:15px; right:15px; }  
+span.errorMessage { color:red; }
+span.successMessage { color:green; }
+
+/*********************************************
+SPECIALTY
+**********************************************/
+/* Style placeholder text */
+::-webkit-input-placeholder { color: #909; } /* WebKit browsers */
+:-moz-placeholder { color: #909;  opacity: 1; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #909; opacity: 1; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #909; } /* Internet Explorer 10+ */
+
+/* Add a RED asterisk to placeholder text with "required" class - WIN */
+.required::-webkit-input-placeholder:after { content:'*'; color: red; }
+.required:-moz-placeholder:after { content:'*'; color: red; } /* Firefox 18- */
+.required::-moz-placeholder:after { content:'*'; color: red; } /* Firefox 19+ */
+.required:-ms-input-placeholder:after { content:'*'; color: red; } /* IE Fail */
+
+/* This will hide all share this stuff except for the "ShareThis" text */
+span.sharethis { background:none !important;}
+.stButton .chicklets { font-family:inherit !important; padding-left:0 !important; }
+.st_facebook, .st_twitter, .st_linkedin, .st_pinterest, .st_email { display:none; }
+
+/* Just meant for Template design purposes... Just delete these */
+.container .col-sm-12 { border:3px solid #AAA39C; margin-top:10px; }
+.template h1, .template h2, .template h3, .template h4 { font-weight:bold; margin-bottom:5px; color:#FF600F;}
+.template h1 a { color:#FF600F; }
+.template p { font-size:12px; color:#666;}
+.template a { color:#003466; }
