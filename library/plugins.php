@@ -199,6 +199,11 @@ function my_theme_register_required_plugins() {
             'required'  => true,
         ),
 		array(
+            'name'      => 'Media File Manager',
+            'slug'      => 'media-file-manager',
+            'required'  => true,
+        ),
+		array(
             'name'      => 'iThemes Security',
             'slug'      => 'better-wp-security',
             //'required'  => true,
