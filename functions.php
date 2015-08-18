@@ -224,7 +224,7 @@ function custom_scripts_and_styles() {
 		wp_register_script( 'waypoints-js4', get_stylesheet_directory_uri() . '/'.dev_dir().'/plugins/waypoints/lib/shortcuts/sticky.min.js'); 				
 			
 		// Youtube Google Analytics
-		wp_register_script( 'youtube-google-analytics-js', get_stylesheet_directory_uri() . '/'.dev_dir().'/plugins/youtube-google-analytics/lunametrics-youtube-v7.gtm.js'); 
+		wp_register_script( 'youtube-google-analytics-js', get_stylesheet_directory_uri() . '/'.dev_dir().'/plugins/youtube-google-analytics/lunametrics-youtube.gtm.min.js'); 
 			
 		/***************************************************************** 
 		KEEP THIS LAST SO IT LOADS AFTER ALL CSS (NEEDS TO BE IN THE HEADER) 
