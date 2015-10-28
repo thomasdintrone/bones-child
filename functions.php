@@ -803,8 +803,12 @@ function baw_theme_setup() {
 }
 
 // GET FEATURED IMAGE URL
-function get_featured_image($size='full') {
-	$thumb_id = get_post_thumbnail_id();
+function get_featured_image($thumb_id='', $size='full') {
+	if($thumb_id == '') { 
+		$thumb_id = get_post_thumbnail_id(); 
+	} else {
+		$thumb_id = get_post_thumbnail_id($thumb_id);
+	}
 	//$thumb_url_array = wp_get_attachment_image_src($thumb_id, $size, true);
 	$thumb_url_array = wp_get_attachment_image_src($thumb_id, $size);
 	$thumb_url = $thumb_url_array[0];
