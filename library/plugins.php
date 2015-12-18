@@ -146,7 +146,7 @@ function my_theme_register_required_plugins() {
 		array(
             'name'      => 'BackUpWordPress',
             'slug'      => 'backupwordpress',
-            //'required'  => true,
+            'required'  => true,
         ),
 		array(
             'name'      => 'Block Specific Plugin Updates',
@@ -201,12 +201,17 @@ function my_theme_register_required_plugins() {
 		array(
             'name'      => 'Media File Manager',
             'slug'      => 'media-file-manager',
-            'required'  => true,
+            //'required'  => true,
         ),
 		array(
             'name'      => 'iThemes Security',
             'slug'      => 'better-wp-security',
-            //'required'  => true,
+            'required'  => true,
+        ),
+		array(
+            'name'      => 'Eggplant 301 Redirects',
+            'slug'      => 'eps-301-redirects',
+            'required'  => true,
         ),
 
     );
