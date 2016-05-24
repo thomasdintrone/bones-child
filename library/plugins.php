@@ -69,6 +69,11 @@ function my_theme_register_required_plugins() {
             'required'  => true,
         ),
         array(
+            'name'      => 'Contact Form DB',
+            'slug'      => 'contact-form-7-to-database-extension',
+            'required'  => true,
+        ),
+        array(
             'name'      => 'Advanced Custom Fields',
             'slug'      => 'advanced-custom-fields',
             'required'  => true,
