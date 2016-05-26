@@ -136,6 +136,8 @@ function custom_scripts_and_styles() {
 		// BOOTSTRAP
 		wp_register_style( 'bootstrap-stylesheet', get_stylesheet_directory_uri() . '/'.dev_dir().'/bootstrap/css/bootstrap.min.css', array(), '', 'all' );
 		wp_register_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/'.dev_dir().'/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '', true );
+		wp_register_style( 'bootstrap-select-stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css', array(), '', 'all' );
+		wp_register_script( 'bootstrap-select-js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js', array( 'jquery' ), '', true );
 			
 		// CHARTS
 		wp_register_script( 'chart-js', get_stylesheet_directory_uri() . '/'.dev_dir().'/plugins/chart/Chart.min.js'); 
@@ -260,6 +262,7 @@ function custom_scripts_and_styles() {
 		// PLUGIN SCRIPTS & STYLES
 		//wp_enqueue_script( 'adaptive-backgrounds-js' );
 		wp_enqueue_script( 'bootstrap-js' );
+		wp_enqueue_script( 'bootstrap-select-js' );
 		//wp_enqueue_script( 'chart-js' );
 		//wp_enqueue_script( 'data-chart-js' );
 		//wp_enqueue_script( 'financial-tables-js' );
@@ -290,6 +293,7 @@ function custom_scripts_and_styles() {
 		//wp_enqueue_script( 'youtube-google-analytics-js' );
 		
 		wp_enqueue_style( 'bootstrap-stylesheet' );
+		wp_enqueue_style( 'bootstrap-select-stylesheet' );
 		//wp_enqueue_style( 'data-chart-stylesheet' );
 		//wp_enqueue_style( 'financial-tables-stylesheet' );
 		//wp_enqueue_style( 'flowplayer-stylesheet' );
