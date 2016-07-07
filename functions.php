@@ -843,6 +843,18 @@ function get_ga_click_tracking($type,$title,$action='Downloaded') {
 	
 }
 
+// Adds instruction text after the post title input
+// reference: https://www.smashingmagazine.com/2016/07/how-to-make-wordpress-easy-to-maintain-for-your-clients/
+function emersonthis_edit_form_after_title() {
+    $tip = '<strong>TIP:</strong> To create a single line break use SHIFT+RETURN. By default, RETURN creates a new paragraph.';
+    echo '<p style="margin-bottom:0;">'.$tip.'</p>';
+}
+add_action(
+    'edit_form_after_title',
+    'emersonthis_edit_form_after_title'
+);
+
+
 // FOR FILE ZIPPING VIA AJAX - BETA
 // havenb't figured this out yet.
 /*function zip_init() {
