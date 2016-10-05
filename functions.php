@@ -112,6 +112,7 @@ function custom_scripts_and_styles() {
 		wp_register_style( 'browsers-stylesheet', get_stylesheet_directory_uri() . '/'.dev_dir().'/css/browsers.css', array(), '', 'all' );
 		wp_register_style( 'devices-stylesheet', get_stylesheet_directory_uri() . '/'.dev_dir().'/css/devices.css', array(), '', 'all' );
 		wp_register_style( 'developer1-stylesheet', get_stylesheet_directory_uri() . '/'.dev_dir().'/css/developer1.css', array(), '', 'all' );
+		wp_register_style( 'sass-stylesheet', get_stylesheet_directory_uri() . '/'.dev_dir().'/css/styles.css', array(), '', 'all' );
 		
 		// IE Styles
 		wp_register_style( 'ie9-only', get_stylesheet_directory_uri() . '/'.dev_dir().'/css/ie9.css', array(), '' );
@@ -257,6 +258,7 @@ function custom_scripts_and_styles() {
 		wp_enqueue_style( 'ie9-only' );
 		wp_enqueue_style( 'ie8-and-below' );
 		wp_enqueue_style( 'ie7-only' );
+		wp_enqueue_style( 'sass-stylesheet' );
 		
 		
 		// PLUGIN SCRIPTS & STYLES
