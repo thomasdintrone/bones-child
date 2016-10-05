@@ -1,0 +1,16 @@
+{
+  "name": "wptheme",
+  "version": "1.0.0",
+  "description": "wp theme based on bones",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Ritter",
+  "license": "MIT"
+}
