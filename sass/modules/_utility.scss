@@ -1,0 +1,38 @@
+hr { margin:30px 0; clear:both; border-top:solid 1px #e6e0da; border-bottom:solid 1px #e6e0da; height:3px; border-left:0; border-right:0;}
+
+.noPadL { padding-left:0 !important; }
+.noPadR { padding-right:0 !important; }
+.noPad { padding-left:0 !important; padding-right:0 !important; }
+
+.text-uppercase { text-transform:uppercase; }
+
+a.preload { background-position:-99999px -99999px; background-repeat:no-repeat; }
+
+.margin-auto { margin:0 auto; }
+
+.noScroll { overflow:hidden; }
+
+.fixed { position:fixed; }
+.absolute { position:absolute; }
+.relative { position:relative; }
+.static { position:static; }
+
+.centered-margin{margin:0 auto; float:none !important;}
+.centered-abs { position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+
+/* Style placeholder text */
+::-webkit-input-placeholder { color: #909; } /* WebKit browsers */
+:-moz-placeholder { color: #909;  opacity: 1; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #909; opacity: 1; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #909; } /* Internet Explorer 10+ */
+
+/* Add a RED asterisk to placeholder text with "required" class - WIN */
+.required::-webkit-input-placeholder:after { content:'*'; color: red; }
+.required:-moz-placeholder:after { content:'*'; color: red; } /* Firefox 18- */
+.required::-moz-placeholder:after { content:'*'; color: red; } /* Firefox 19+ */
+.required:-ms-input-placeholder:after { content:'*'; color: red; } /* IE Fail */
+
+/* This will hide all share this stuff except for the ShareThis text */
+span.sharethis { background:none !important;}
+.stButton .chicklets { font-family:inherit !important; padding-left:0 !important; }
+.st_facebook, .st_twitter, .st_linkedin, .st_pinterest, .st_email { display:none; }
